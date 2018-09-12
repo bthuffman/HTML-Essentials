@@ -15,11 +15,46 @@
 <body>
 <!-- The meat of the sandwich, what makes the sandwich what it is. Will have all the visual content of the page is
 within this tag. -->
-    <h1>such a cute!</h1>
-    <!-- If the <h1> isn't there then it won't appear quite right especial in the inspect element -->
-    <p> Here's a <b> paragraph </b>. </p>
+    <h1>Such a cute!</h1>
+    <!-- If the <h1> isn't there then it won't appear quite right especial in the inspect element. <h> headings are used
+     to organize text. -->
+    <p>  Here's a <b> paragraph </b>. </p>
+    <pre>What
+        <i> am </i> <em> I </em>?
+        <b>I</b> am <strong> code </strong>!</pre>
+    <!-- Pre formatting has the text show up on the page exactly as it is in the code (spaces, different line, etc. -->
+    <!-- <i> and <em> usually do the same thing visually, except <em> has emphasis added to it when screen reader
+    programs are parsing (reading line by line on the screen) the words out loud to the blind. <b> and <strong> likewise
+    usually result in the same thing visually, but strong will be announced for the blind loudly. The b and i are for
+    presentation. The reason they haven't been deprecated and replaced by strong and em is because sometimes you will
+    want to italicized or bold something without it being emphasized differently in parsing (in speech)-->
+    <h6> Size matters </h6>
+    <!-- WIth cascading style sheets will be able to resize text without these cumbersome heading tags. Because you will
+    change the size of various heading using CSS, you don't really want to use <h> to format the size of text. They're
+    really more for denoting the importance of each part of the text/structuring the text. Just don't skip <h> numbers.
+    -->
     <a href="http://www.w3.org/TR/html5/dom.html#kinds-of-content">interactive graphic</a>
     <!-- This shows how the various content models how they overlap and are related to each other. James advises that
     there are better sources than W3.com. -->
+    <p> Make sure pages are properly formated and include p, paragraphs. Just don't make empty paragraphs to create
+    space between them. You will use CSS for that. Technically you don't 'need' the closing paragraph tag, but they help
+    to identify the structure of things when reading the code. </p>
+    <p> Brando Huff <br> 1234 Amherst NE <br> Albuqueruque NM, 87111</p>
+    <!-- It would have been semantically incorrect to separate these elements (the address) that belong together with
+    the p paragraph tag, thus I used the <br> line break tag. <b> don't need a closing tag </br>. In xml this wasn't the
+    case and you used a self closing tag <br /> -->
+    <p>&amp;amp &copy; &trade; </p>
+    <!--to display special characters you will want to use named character entities starting with a & symbol.
+    More can be found on wikipedia -->
+    <p> Can add white space by using &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nbsp; named character entitity. Use CSS
+        to create space for visual presentation, not this nbsp. </p>
+    <!-- The non breaking space &nbsp; is for doing just that creating non-breaking space. When resizing a page this
+    becomes particularly useful. It can make words or segments of words to not break when rezing a page. -->
+    <p> <img src="1.jpg" width="50%" height="50%" alt="London Black and White"></p><!-- src, this tells the
+    browser where to find this image. Width and height you want to display image at 100% of it's size. Alt gives a
+    description of the image-->
+    <p>Use align attribute to make the text wrap around the image,but really you should do this in CSS. </p>
+
+    <p> CHALLENGE 1 </p>
 </body>
 </html>
