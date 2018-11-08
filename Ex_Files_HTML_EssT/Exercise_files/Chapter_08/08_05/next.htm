@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -126,7 +126,17 @@ window.onload=function() {
    
     // attach event listener to links using onclick and onfocus, fire the displayPanel function, return false to disable the link
     for (var i = 0; i < tabLinks.length; i++) {
-
+    //for loop. As long as i is less than the number of tab links add one to it. Recall arrays start with 0, but refer to one.
+        tabLinks [i].onclick = function() {//for each of the list items in tab links, we want to attach an on click
+            // event listener (wait for it to be clickedd) and then run the function.
+            displayPanel(this);//this is the function (refering to the one several lines below). When call this function
+            //this is refering to [i], that which is clicked.
+            return false;//this disables moving down to the tab selected?
+        }
+        tabLinks[i].onfocus = function(){//same as the above, but with on focus. This is for assisted technology.
+            displaypanel(this);
+            return false);
+        }
     }
 }
 

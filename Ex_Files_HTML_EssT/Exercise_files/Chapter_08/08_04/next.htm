@@ -111,11 +111,20 @@
 <script type="text/javascript">
 //tabbed panels
 
-window.onload=function() {
-	//set initial panel state
-	//listen for clicks on tabs
-}
+//declare globals to hold all the links and all the panel elements
+var tabLinks;
+var tabPanels;
+//As part of the DOM (document object model)the use of . is called dot notation, scripting that lets us
+// reference objects and use methods to manipulate them.
 
+window.onload=function() {
+    // when the page loads, grab the li elements
+    tabLinks =
+    document.getElementById("tabs") .getElementsByTagName("li");
+    //in plain english this is going to those taged with the id tabs and then getting elements under that that have the tag li.
+    tapPanels =
+document.getElementById("containers").getElementsByTagName("div");
+}
 function displayPanel() {
 	//respond to tab clicks 
 	//change panel display and active tabs
