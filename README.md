@@ -1,2 +1,2 @@
 # HTML-Essentials
-Lynda.com
+This training comes from Lynda.com
